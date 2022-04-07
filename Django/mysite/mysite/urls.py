@@ -18,12 +18,19 @@ from django.urls import path
 from .import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',views.index,name='index'),
-    path('',views.index1,name='index1'),
-    path('about/',views.about,name='about'),
-    path('removed',views.removed,name='removed'),
-    path('capitalize',views.capfirst,name='capfirst'),
-    path('nl',views.nl,name="newline")
-    
+    path('',views.index,name='index'),
+    path('ana',views.ana,name="analyze"),
+    path('ana',views.ana,name='capfirst'),
+    path('ana',views.ana,name="removenl")
+
+
+
+    # path('nl',views.nl,name="newline")
+
+    # path('',views.index1,name='index1'),
+    # path('about/',views.about,name='about'),
+    # path('removed',views.removed,name='removed'),
+    # path('capitalize',views.capfirst,name='capfirst'),
+    # path('nl',views.nl,name="newline")
 
 ]

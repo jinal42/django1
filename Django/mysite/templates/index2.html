@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Django Templates ...
+      <form action="/ana" method="get">
+          {% csrf_token %}
+          <textarea name="text" style="height: 129px; width: 1816px;"></textarea>
+          <input type="checkbox" name="ana">remove nl<br>
+          <input type="checkbox" name="fullcaps">uppercase<br>
+          <input type="checkbox" name="removeline">remove new line<br>
+          <input type="checkbox" name="removespace">remove extra space<br>
+  
+          <button type="submit">analyze Text</button>
+  
+      </form>
+</body>
+</html>
