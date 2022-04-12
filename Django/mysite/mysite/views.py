@@ -19,7 +19,7 @@ def index(request):
 # def about(request):
 #     return HttpResponse("About Django Python..")
 
-
+# import demoapp views here
 # def index1(request):
 #     return HttpResponse("Home")
 
